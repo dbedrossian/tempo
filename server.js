@@ -7,7 +7,7 @@ require('dotenv').config();
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // connect files
-const routes = require('./controllers');
+const routes = require('./controller');
 const sequelize = require('./config/connection');
 const helpers = require('./utils/helpers');
 
