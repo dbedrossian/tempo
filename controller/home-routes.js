@@ -36,9 +36,20 @@ router.get('/', async (req, res) => {
 // Profile 
 router.get('/profile/:id', async (req, res) => {
     try {
-        const profileData = await User.findbyPk(req.params.id);
+        const profileData = await User.findByPk(req.params.id, {
+            include: [
+            {
+                model: Project,
+                attributes: [
+                    'id',
+                    'name',
+                    'description',
+                ],
+            },
+            ],
+        });
         const profile = profileData.get({ plain: true });
-        res.render('user', { profile, loggedIn: req.session.loggedIn });
+        res.render('profile', { profile, loggedIn: req.session.loggedIn })
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
