@@ -1,0 +1,130 @@
+<div class="container box p-6
+                has-background-light">
+    <h1 class="title has-text-centered
+                 has-text-success">
+        Inspiration Awaits
+    </h1>
+    <h2 class="subtitle has-text-centered">
+        Sign Up Form
+    </h2>
+    <form action="">
+        <div class="field">
+            <label class="label">First Name *</label>
+            <div class="control">
+                <input 
+                class="input" 
+                type="text"
+                placeholder="Bob" 
+                required />
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Last Name</label>
+            <div class="control has-icons-left
+                      has-icons-right">
+                <input 
+                class="input is-success" 
+                type="text" 
+                placeholder="Dylan"/>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email *</label>
+            <div class="control has-icons-left
+                      has-icons-right">
+                <input 
+                class="input is-danger" 
+                type="email" 
+                placeholder="bob.dylan@gmail.com" 
+                required/>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Password *</label>
+            <div class="control has-icons-left
+                      has-icons-right">
+                <input 
+                class="input is-danger" 
+                type="password" 
+                placeholder="(must be 8+ chars)" 
+                minlength="8"
+                required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Retype Password *</label>
+            <div class="control has-icons-left
+                      has-icons-right">
+                <input 
+                class="input is-danger" 
+                type="password" 
+                placeholder="(must be 8+ chars)" 
+                minlength="8"
+                required />
+                <span class="icon is-small is-left">
+                    <i class="fas fa-key"></i>
+                </span>
+            </div>
+        </div>
+        {{!-- <div class="field">
+            <label class="label">
+                Current Interests
+            </label>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option>Pop</option>
+                        <option>Jazz</option>
+                        <option>R&B</option>
+                        <option>Rap</option>
+                        <option>Country</option>
+                        <option>Folk</option>
+                        <option>Indie</option>
+                        <option>Rock</option>
+                        <option>Blues</option>
+                        <option>Metal</option>
+                        <option>Classical</option>
+                        <option>Video Games</option>
+                        <option>Movie/TV scores</option>
+                    </select>
+                </div>
+            </div>
+        </div> --}}
+
+        <div class="field">
+            <label class="label">
+                Bio
+            </label>
+            <div class="control">
+                <textarea 
+                class="textarea" 
+                placeholder="Tell us about yourself! (You can change or update this later)"></textarea>
+            </div>
+        </div>
+
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-success">
+                    Sign up
+                </button>
+            </div>
+            {{!-- <div class="control">
+                <button class="button is-link is-light">
+                    Cancel
+                </button>
+            </div> --}}
+        </div>
+    </form>
+</div>
