@@ -35,20 +35,22 @@ router.get('/', async (req, res) => {
 // GET one User
 // Profile 
 router.get('/profile/:id', async (req, res) => {
-try {
-    
-} catch (err) {
-    
-}
+    try {
+        
+    } catch (err) {
+        
+    }
 });
 
 // GET one Post (later, potential to add search bar to homepage?)
 
 // Login route
 router.get('/login', async (req, res) => {
-try {
-    
-} catch (err) {
-    
-}
-})
+    try {
+        
+    } catch (err) {
+        
+    }
+});
+
+module.exports = router;
