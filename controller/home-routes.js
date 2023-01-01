@@ -24,7 +24,7 @@ router.get('/', async (req, res) => {
         );
         res.render('homepage', {
             posts,
-            loggedIn: req.session.loggedIn, 
+            loggedIn: req.session.loggedIn,
         });
     } catch (err) {
         console.log(err);
@@ -36,20 +36,38 @@ router.get('/', async (req, res) => {
 // Profile 
 router.get('/profile/:id', async (req, res) => {
     try {
-        
+        const profileData = await User.findbyPk(req.params.id);
+        const profile = profileData.get({ plain: true });
+        res.render('user', { profile, loggedIn: req.session.loggedIn });
     } catch (err) {
-        
+        console.log(err);
+        res.status(500).json(err);
     }
 });
 
 // GET one Post (later, potential to add search bar to homepage?)
+router.get('/post/:id', async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id);
+        const post = postData.get({ plain: true });
+        res.render('post', { post, loggedIn: req.session.loggedIn });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
 
 // Login route
 router.get('/login', async (req, res) => {
     try {
-        
+        if (req.session.loggedIn) {
+            res.redirect('/');
+            return;
+        }
+        res.render('login');
     } catch (err) {
-        
+        console.log(err);
+        res.status(500).json(err);
     }
 });
 
