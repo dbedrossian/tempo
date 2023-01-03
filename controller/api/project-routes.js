@@ -6,6 +6,7 @@ const { Project } = require('../../models');
 router.post('/', async (req, res) => {
     try {
       const projectData = await Project.create({
+        userId: req.body.userId,
         name: req.body.name,
         description: req.body.description,
       });
