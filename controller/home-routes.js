@@ -27,7 +27,6 @@ router.get('/', async (req, res) => {
             loggedIn: req.session.loggedIn,
         });
     } catch (err) {
-        console.log(err);
         res.status(500).json(err);
     }
 });
@@ -51,7 +50,6 @@ router.get('/profile/:id', async (req, res) => {
         const profile = profileData.get({ plain: true });
         res.render('profile', { profile, loggedIn: req.session.loggedIn })
     } catch (err) {
-        console.log(err);
         res.status(500).json(err);
     }
 });
@@ -63,7 +61,6 @@ router.get('/post/:id', async (req, res) => {
         const post = postData.get({ plain: true });
         res.render('post', { post, loggedIn: req.session.loggedIn });
     } catch (err) {
-        console.log(err);
         res.status(500).json(err);
     }
 });
@@ -77,7 +74,6 @@ router.get('/login', async (req, res) => {
         }
         res.render('login');
     } catch (err) {
-        console.log(err);
         res.status(500).json(err);
     }
 });
