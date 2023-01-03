@@ -1,0 +1,48 @@
+:root {
+    /* font */
+    --ff1: "Lora", sans-serif;
+    --ff2: "Six Caps", sans-serif;
+    --ff3: "Open Sans", sans-serif;
+    --ff4: "Poppins", sans-serif;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    /* lines */
+    --line-2: 0.2rem;
+    --line-4: 1.25rem;
+    --radius: 0.5rem;
+    --radius2: 0.25rem;
+    /* bg and surface */
+    --col-bg: #16144C;
+    --col-bg-2: #1c1630;
+    --col-surface: #2F0D7A;
+    --col-surface2: #3C2A91;
+    /* primary light */
+    --col-p-1: #D9D7FA;
+    --col-p-2: #bb9af7;
+    --col-p-3: #9b9ef7;
+    --col-p-4: #494094;
+    --col-p-5: #656090;
+    --col-p-6: #b3aeda; 
+    /* blacks */
+    --col-grey: #b3badb;
+    --col-black: #1a1b26;
+  }
+#custom-nav {
+    background-color: var(--col-p-2);
+}
+#custom-main {
+    background-color: var(--col-bg-2);
+    max-width: max-content;
+}
+  .logo {
+    font-family: var(--ff1);
+    font-size: 50px;
+    color: var(--col-bg-2);
+  }
+
+  .custom-txt {
+    font-family: var(--ff3);
+    color: var(--col-p-4);
+  }
