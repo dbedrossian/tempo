@@ -1,1 +1,37 @@
-[]
+[
+  {
+      "first_name": "John",
+      "last_name": "Smith",
+      "email": "johnsmith@gmail.com",
+      "password": "jKl#2mN7@gRf",
+      "bio": "Hi, my name is John Smith and I am a musician. I have been playing the guitar for over 10 years and love performing live. In my free time, you can find me practicing new techniques and writing original music."
+  },
+  {
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "janedoe@gmail.com",
+      "password": "Jd#4fF8@hTg",
+      "bio": "Hi, my name is Jane Doe and I am a singer-songwriter. I have always been passionate about music and love nothing more than sharing my original songs with others. In my spare time, you can find me performing at local open mic nights or working on new material."
+  },
+  {
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "email": "bobjohnson@gmail.com",
+      "password": "Bj#6oP9@iUj",
+      "bio": "Hi, my name is Bob Johnson and I am a drummer. I have been playing the drums for over 15 years and have had the opportunity to perform with a variety of bands. When I'm not behind the kit, you can find me practicing new rhythms and perfecting my craft."
+  },
+  {
+      "first_name": "Alice",
+      "last_name": "Williams",
+      "email": "alicewilliams@gmail.com",
+      "password": "Aw#8tY0@jVe",
+      "bio": "Hi, my name is Alice Williams and I am a pianist and video game composer. I have been playing the piano for as long as I can remember and love exploring different styles of music. I have also had the opportunity to compose music for a number of popular video games. In my free time, you can find me practicing new pieces or working on new game scores."
+  },
+  {
+      "first_name": "Tom",
+      "last_name": "Brown",
+      "email": "tombrown@gmail.com",
+      "password": "Tb#1qZ3@aSd",
+      "bio": "Hi, my name is Tom Brown and I am a bass player and film score composer. I have been playing the bass for over 8 years and have had the opportunity to perform with a number of different bands. I have also worked on the scores for several hit movies. When I'm not performing or composing, you can find me practicing new techniques or working on my own music."
+  }
+]
