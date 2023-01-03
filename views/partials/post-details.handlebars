@@ -10,14 +10,14 @@
         <div class="card-content">
             <div class="media">
                 <div class="media-content">
-                    <p class="title is-4">{{Post.projectId}}Project Name</p>
-                    <a href="/user/{{id}}" class="subtitle is-6">{{User.firstName}}, {{User.lastName}}
+                    <p class="title is-4">{{post.project.name}}Project Name</p>
+                    <a href="/user/{{id}}" class="subtitle is-6">{{post.project.user.firstName}} {{post.project.user.lastName}}
                     </a>
                 </div>
             </div>
 
             <div class="content">
-                <p>{{Post.content}}content</p>
+                <p>{{post.content}}content</p>
                 {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
     
                 {{!-- <a href="#">#interest1</a>
