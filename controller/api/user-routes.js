@@ -6,7 +6,8 @@ const { User } = require('../../models');
 router.post('/', async (req, res) => {
     try {
       const userData = await User.create({
-        username: req.body.username,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         email: req.body.email,
         password: req.body.password,
       });
@@ -33,7 +34,7 @@ router.post('/login', async (req, res) => {
       if (!userData) {
         res
           .status(400)
-          .json({ message: 'Sorry, your email or password had some wrong notes. Please try again!' });
+          .json({ message: 'Sorry, your email had some wrong notes. Please try again!' });
         return;
       }
   
@@ -42,7 +43,7 @@ router.post('/login', async (req, res) => {
       if (!correctPassword) {
         res
           .status(400)
-          .json({ message: 'Sorry, your email or password had some wrong notes. Please try again!' });
+          .json({ message: 'Sorry, your password had some wrong notes. Please try again!' });
         return;
       }
   

@@ -47,7 +47,11 @@ router.get('/profile/:id', async (req, res) => {
             },
             ],
         });
-        const profile = profileData.get({ plain: true });
+        console.log('profileData log', profileData);
+        const profile = profileData.map((profile) =>
+            profile.get({ plain: true })
+        );
+        console.log('profile log', profile);
         res.render('profile', { profile, loggedIn: req.session.loggedIn })
     } catch (err) {
         res.status(500).json(err);
@@ -58,7 +62,9 @@ router.get('/profile/:id', async (req, res) => {
 router.get('/post/:id', async (req, res) => {
     try {
         const postData = await Post.findByPk(req.params.id);
-        const post = postData.get({ plain: true });
+        const post = postData.map((Post) =>
+            Post.get({ plain: true })
+        );
         res.render('post', { post, loggedIn: req.session.loggedIn });
     } catch (err) {
         res.status(500).json(err);
