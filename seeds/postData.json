@@ -2,66 +2,66 @@
   {
      "caption":"Performing 'Wildflowers' at the coffeehouse",
      "media":"video",
-     "project_id":1
+     "projectId":1
   },
   {
      "caption":"Live performance of 'Midnight Sun' at the coffeehouse",
      "media":"audio",
-     "project_id":1
+     "projectId":1
   },
   {
      "caption":"Rehearsing for my album release show",
      "media":"picture",
-     "project_id":2
+     "projectId":2
   },
   {
      "caption":"Recording vocals for my debut album",
      "media":"picture",
-     "project_id":2
+     "projectId":2
   },
   {
      "caption":"Premiering my new single 'Something to Believe In' at the open mic night",
      "media":"video",
-     "project_id":2
+     "projectId":2
   },
   {
      "caption":"Rockin' out at the rock club",
      "media":"video",
-     "project_id":3
+     "projectId":3
   },
   {
      "caption":"Performing an original song at the rock club",
      "media":"audio",
-     "project_id":3
+     "projectId":3
   },
   {
      "caption":"Sound check at the rock club",
      "media":"picture",
-     "project_id":3
+     "projectId":3
   },
   {
      "caption":"Scoring session for 'Galactic Adventures'",
      "media":"picture",
-     "project_id":4
+     "projectId":4
   },
   {
      "caption":"Listen to a preview of the 'Galactic Adventures' soundtrack",
      "media":"audio",
-     "project_id":4
+     "projectId":4
   },
   {
      "caption":"Orchestra recording session for 'The Great Heist' score",
      "media":"video",
-     "project_id":5
+     "projectId":5
   },
   {
      "caption":"Composing the main theme for 'The Great Heist'",
      "media":"audio",
-     "project_id":5
+     "projectId":5
   },
   {
      "caption":"Behind the scenes of the 'The Great Heist' score recording sessions",
      "media":"picture",
-     "project_id":5
+     "projectId":5
   }
 ]

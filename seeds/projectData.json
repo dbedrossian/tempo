@@ -2,26 +2,26 @@
   {
      "name":"Acoustic Nights at the Coffeehouse",
      "description":"Live recording of my acoustic performance at the local coffeehouse featuring a mix of original songs and covers. The set list includes a range of styles, from folk to pop, and showcases my skills on the guitar and vocals.",
-     "user_id":1
+     "userId":1
   },
   {
      "name":"Singer-Songwriter Debut Album",
      "description":"My debut album as a singer-songwriter, featuring a collection of original songs that showcase my unique style and diverse influences. The album includes tracks in a variety of genres, including folk, rock, and pop, and highlights my skills on the guitar and vocals.",
-     "user_id":2
+     "userId":2
   },
   {
      "name":"Live at the Rock Club",
      "description":"Recording of a live performance with my rock band at a popular local venue. The set list includes a mix of original songs and covers and showcases the band's high-energy style and musicianship.",
-     "user_id":3
+     "userId":3
   },
   {
      "name":"Video Game Soundtrack: 'Galactic Adventures'",
      "description":"Original soundtrack composed for the popular video game 'Galactic Adventures'. The score includes a mix of electronic and orchestral music and was recorded with a full orchestra. The music aims to enhance the gameplay experience and immerse players in the game's futuristic world.",
-     "user_id":4
+     "userId":4
   },
   {
      "name":"Movie Score: 'The Great Heist'",
      "description":"Original score composed for the hit movie 'The Great Heist'. The score includes a mix of orchestral and electronic music and was recorded with a full orchestra. The music aims to enhance the mood and tension of the film and support the narrative arc of the story.",
-     "user_id":5
+     "userId":5
   }
 ]
