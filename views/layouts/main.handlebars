@@ -10,10 +10,10 @@
   <title>Tempo</title>
 </head>
 <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav id="custom-nav" class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <h2>Tempo</h2>
+      <h2 class="logo">Tempo</h2>
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -25,12 +25,12 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item custom-txt">
         Home
       </a>
 
       {{#if loggedIn}}
-      <a class="navbar-item">
+      <a class="navbar-item custom-txt">
         Profile
       </a>
       {{/if}}
@@ -40,14 +40,14 @@
       <div class="navbar-item">
         <div class="buttons">
           {{#if loggedIn}}
-          <a class="button is-light">
+          <a class="button is-light custom-txt">
             Log Out
           </a>
           {{else}}
-          <a href="/signup" class="button is-primary">
+          <a href="/signup" class="button is-primary custom-txt">
             <strong>Sign Up</strong>
           </a>
-          <a href="/login" class="button is-light">
+          <a href="/login" class="button is-light custom-txt">
             Log In
           </a>
           {{/if}}
@@ -57,7 +57,7 @@
   </div>
 </nav>
 
-<main class="container">
+<main id="custom-main" class="container is-fullhd">
   {{{ body }}}
 </main>
   
