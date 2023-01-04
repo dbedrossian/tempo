@@ -52,18 +52,18 @@
 #btn {
     margin-bottom: 10px;
 }
-.card{
-	height: max-content;
-    padding: 10px;
-    /* border-width: 10px; */
-    background-color: var(--col-p-5);
-}
 .card-grid{
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
     background-color: var(--col-p-5);
     margin-bottom: 20px;
+}
+.card {
+    height: max-content;
+    padding: 10px;
+    /* border-width: 10px; */
+    background-color: var(--col-p-5);
 }
 .logo {
     font-family: var(--ff3);
@@ -73,6 +73,25 @@
     text-shadow: 5px 0px 3px var(--col-p-2);
     padding-left: 10px;
   }
+.custom-about {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border-top: 6px solid var(--col-p-2);
+    background-color: var(--col-p-6);
+}
+.custom-about img {
+    height: 170px;
+    width: 170px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    border: 5px solid transparent;
+    box-shadow: 0 0 0 4px var(--col-p-2);
+}
 .custom-main {
     background-color: var(--col-bg-2);
     border-top: 5px var(--col-p-2);
@@ -128,11 +147,15 @@
 .custom-btn-light:hover {
     border-color: var(--col-bg-2);
 }
-
 .custom-txt {
     font-family: var(--ff3);
     color: var(--col-p-4);
 }
+
+
+
+
+
 
 *,
 *::before,
@@ -151,7 +174,8 @@ body {
 }
 
 
-/* INTRO SECTION
+/* TIMLINE
+INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
