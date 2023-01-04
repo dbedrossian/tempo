@@ -48,7 +48,16 @@
     font-size: 48px;
     padding-left: 2px;
 }
+#btn {
+    margin-bottom: 10px;
+}
 .card{
+	height: max-content;
+    padding: 10px;
+    /* border-width: 10px; */
+    background-color: var(--col-p-5);
+}
+.card-grid{
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
@@ -75,6 +84,7 @@
 }
 .custom-content {
     background-color: var(--col-grey);
+    border-radius: 5px;
 }
 .custom-txt {
     font-family: var(--ff5);
@@ -91,6 +101,13 @@
     font-family: var(--ff1);
     color: var(--col-p-2);
     text-shadow: 5px 0px 3px var(--col-p-5);
+}
+.custom-form {
+    padding-top: 30px;
+}
+.custom-field {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .custom-btn {
     background-color: var(--col-p-2);
