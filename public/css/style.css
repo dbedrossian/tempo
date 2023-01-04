@@ -75,7 +75,7 @@
   }
 .custom-main {
     background-color: var(--col-bg-2);
-    border-top: 5px var(--col-p-2)
+    border-top: 5px var(--col-p-2);
     /* border-top: var(--col-grey-dark);
     border-width: 3px; */
 }
