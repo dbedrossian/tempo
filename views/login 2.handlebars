@@ -1,20 +1,19 @@
-<section class="hero is-fullheight">
+<section class="hero is-primary is-fullheight">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
-        <div class="custom-container column is-5-tablet is-4-desktop is-4-widescreen">
-        <div class="card">
-          <form class="box custom-content login-form">
+        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+          <form action="" class="box">
             <section class="field">
               <label for="" class="label">Email</label>
               <div class="control has-icons-left">
                 <input 
                 type="email" 
-                id="email-login"
-                placeholder="bob.dylan@gmail.com" 
+                placeholder="e.g. bob.dylan@gmail.com" 
                 class="input" 
                 required
                 />
+                {{!-- TODO: need closing /> or just > after required? --}}
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
@@ -25,7 +24,6 @@
               <div class="control has-icons-left">
                 <input 
                 type="password" 
-                id="password-login"
                 placeholder="(must be 8+ chars)" 
                 class="input"
                 minlength="8" 
@@ -42,18 +40,15 @@
               </label>
             </div> --}}
             <section class="field">
-              <section class="control">
-                <button class="button custom-btn">
-                  <strong>Log In</strong>
-                </button>
-              </section>
+              <button class="button is-success">
+                Login
+              </button>
             </section>
           </form>
-        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<script src="./js/login.js"></script>
+<script src="./public/js/login.js"></script>
