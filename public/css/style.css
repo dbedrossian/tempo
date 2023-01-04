@@ -48,12 +48,18 @@
     font-size: 48px;
     padding-left: 2px;
 }
-.card{
+.card-grid {
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
     background-color: var(--col-p-5);
     margin-bottom: 20px;
+}
+.card {
+    height: max-content;
+    padding: 10px;
+    /* border-width: 10px; */
+    background-color: var(--col-p-5);
 }
 .logo {
     font-family: var(--ff3);
@@ -63,6 +69,16 @@
     text-shadow: 5px 0px 3px var(--col-p-2);
     padding-left: 10px;
   }
+.widget-about {
+    text-align: center;
+}
+.widget {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    border-top: 6px solid var(--col-p-2);
+    background-color: var(--col-p-6);
+}
 .custom-main {
     background-color: var(--col-bg-2);
     /* border-top: var(--col-grey-dark);

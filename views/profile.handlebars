@@ -1,7 +1,7 @@
 <div class="widget widget-about">
-    <h4 class="widget-title">Hi, I am Alex!</h4>
-    <img class="img-fluid" src="images/author.jpg" alt="Artist profile picture">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel in in donec iaculis tempus odio nunc laoreet . Libero ullamcorper.</p>
+    <h4 class="widget-title">{{user.firstName}} {{user.lastName}}</h4>
+    <img class="img-fluid" src="{{user.profilePic}}">
+    <p class="custom-txt">{{user.bio}}</p>
 
    {{!-- Future Dev: add links to external socials --}}
    {{!-- <ul class="social-icons mb-3">
