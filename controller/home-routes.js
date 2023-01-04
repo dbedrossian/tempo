@@ -49,24 +49,9 @@ router.get('/profile/:id', async (req, res) => {
             ],
         });
         console.log('profileData log', profileData);
-        const profile = profileData.map((profile) =>
-            profile.get({ plain: true })
-        );
+        const profile = profileData.get({ plain: true });
         console.log('profile log', profile);
         res.render('profile', { profile, loggedIn: req.session.loggedIn })
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
-
-// GET one Post (later, potential to add search bar to homepage?)
-router.get('/post/:id', async (req, res) => {
-    try {
-        const postData = await Post.findByPk(req.params.id);
-        const post = postData.map((Post) =>
-            Post.get({ plain: true })
-        );
-        res.render('post', { post, loggedIn: req.session.loggedIn });
     } catch (err) {
         res.status(500).json(err);
     }
