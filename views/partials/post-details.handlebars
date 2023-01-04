@@ -1,4 +1,4 @@
-<div class="column">
+{{!-- <div class="column is-one-third"> --}}
     <div class="card">
         <div class="card-image">
             <button id="upload_widget" class="cloudinary-button">
@@ -22,23 +22,22 @@
                     {{!-- cloudinary src link alt="User posted media image"> --}}
             </figure> --}}
         </div>
-        <div class="card-content">
+        <div class="card-content custom-content">
             <div class="media">
                 <div class="media-content">
-                    <p class="title is-4">{{post.project.name}}</p>
-                    <a href="/user/{{id}}" class="subtitle is-6">{{post.project.user.firstName}}
-                        {{post.project.user.lastName}}
+                    <p class="title is-4 custom-txt">{{post.project.name}}Project Name</p>
+                    <a href="/user/{{id}}" class="subtitle is-6">{{post.project.user.firstName}} {{post.project.user.lastName}}
                     </a>
                 </div>
             </div>
 
             <div class="content">
-                <p>{{post.content}}</p>
-                <p>{{post.timestamp}}</p>
+                <p class="custom-txt">{{post.caption}}</p>
+                <p class="custom-txt">{{post.timestamp}}</p>
                 {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
                 {{!-- <a href="#">#interest1</a>
                 <a href="#">#interest2</a> --}}
             </div>
         </div>
     </div>
-</div>
+{{!-- </div> --}}
