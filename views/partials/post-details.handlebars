@@ -6,7 +6,7 @@
             </button>
             
             <!-- placeholder for uploaded image -->
-            <img id="uploadedimage" src="">
+            <img id="uploadedimage" src="{{media}}">
             </img>
 
             <!-- cloudinary upload widget -->
@@ -16,28 +16,22 @@
             <!-- local upload instantiation -->
             <script src="/public/js/upload_widget.js" type="text/javascript">
             </script>
-
-            {{!-- <figure class="image is-2by1">
-                <img src="https://images.pexels.com/photos/167635/pexels-photo-167635.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    {{!-- cloudinary src link alt="User posted media image"> --}}
-            </figure> --}}
         </div>
         <div class="card-content custom-content">
             <div class="media">
                 <div class="media-content">
-                    <p class="title is-4 custom-txt">{{post.project.name}}Project Name</p>
-                    <a href="/user/{{id}}" class="subtitle is-6">{{post.project.user.firstName}} {{post.project.user.lastName}}
+                    <p class="title is-4 custom-txt">{{project.name}}</p>
+                    <a href="/user/{{id}}" class="subtitle is-6">{{project.user.firstName}} {{project.user.lastName}}
                     </a>
                 </div>
             </div>
 
             <div class="content">
-                <p class="custom-txt">{{post.caption}}</p>
-                <p class="custom-txt">{{post.timestamp}}</p>
+                <p class="custom-txt">{{caption}}</p>
+                <p class="custom-txt">{{createdAt}}</p>
                 {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
                 {{!-- <a href="#">#interest1</a>
                 <a href="#">#interest2</a> --}}
             </div>
         </div>
     </div>
-{{!-- </div> --}}

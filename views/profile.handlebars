@@ -1,27 +1,32 @@
-<div class="widget widget-about">
-    <h4 class="widget-title">{{user.firstName}} {{user.lastName}}</h4>
-    <img class="img-fluid" src="{{user.profilePic}}">
-    <p class="custom-txt">{{user.bio}}</p>
+<section>
+  <aside>
+    <article>
+      <img src="" alt="">
+      <h3></h3>
+      <p></p>
+    </article>
+  </aside>
 
-   {{!-- Future Dev: add links to external socials --}}
-   {{!-- <ul class="social-icons mb-3">
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
-      
-      <li class="list-inline-item"><a href="#"><i class="ti-youtube"></i></a></li> --}}
-      
-    </ul>
-    <a href="about-me.html" class="btn btn-primary mb-2">New Project</a>
-    <a href="about-me.html" class="btn btn-primary mb-2">New Post</a>
-  </div>
+  {{#if user.project}}
+    <section class="intro">
+      <div class="container">
+        <h1>{{user.project}} &darr;</h1>
+      </div>
+    </section>
 
-  <script src="/public/js/upload_widget.js"></script>
-  <script src="/public/js/modal.js"></script>
-  <script src="/public/js/create_project.js"></script>
-  <script src="/public/js/create_post"></script>
+    <section class="timeline">
+      <ul>
+        {{#each user.project.posts as |post|}}
+          <li>
+            {{> post-details}}
+          </li>
+        {{/each}}
+        <li>
+          <div>
+            <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+          </div>
+        </li>
+      </ul>
+    </section>
+  {{/if}}
+</section>
