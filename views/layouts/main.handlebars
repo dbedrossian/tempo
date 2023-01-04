@@ -40,7 +40,7 @@
       <div class="navbar-item">
         <div class="buttons">
           {{#if loggedIn}}
-          <a class="button is-light custom-txt">
+          <a class="button is-light custom-txt" id="logout">
             Log Out
           </a>
           {{else}}
@@ -60,6 +60,9 @@
 <main id="custom-main" class="container is-fullhd">
   {{{ body }}}
 </main>
-  
+
+{{#if loggedIn}}
+  <script src="./js/logout"></script>
+{{/if}}
 </body>
 </html>
