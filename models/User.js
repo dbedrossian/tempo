@@ -37,7 +37,7 @@ User.init(
       allowNull: false
     },
     bio: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true
     },
     profilePic: {

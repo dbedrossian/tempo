@@ -1,0 +1,54 @@
+<section class="hero is-primary is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+          <form action="" class="box">
+            <section class="field">
+              <label for="" class="label">Email</label>
+              <div class="control has-icons-left">
+                <input 
+                type="email" 
+                placeholder="e.g. bob.dylan@gmail.com" 
+                class="input" 
+                required
+                />
+                {{!-- TODO: need closing /> or just > after required? --}}
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </section>
+            <section class="field">
+              <label for="" class="label">Password</label>
+              <div class="control has-icons-left">
+                <input 
+                type="password" 
+                placeholder="(must be 8+ chars)" 
+                class="input"
+                minlength="8" 
+                required>
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+            </section>
+            {{!-- <div class="field">
+              <label for="" class="checkbox">
+                <input type="checkbox">
+               Remember me
+              </label>
+            </div> --}}
+            <section class="field">
+              <button class="button is-success">
+                Login
+              </button>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="./public/js/login.js"></script>
