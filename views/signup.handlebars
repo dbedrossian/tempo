@@ -1,30 +1,32 @@
-<div class="container box p-6
-                has-background-light">
-    <h1 class="title has-text-centered
-                 has-text-success">
-        Inspiration Awaits
+<div class="custom-form">
+<div class="container custom-container column is-5-tablet is-4-desktop is-4-widescreen">
+ <div class="card">
+  <div class="custom-content">
+    <h1 class="title has-text-centered">
+       New Account
     </h1>
-    <h2 class="subtitle has-text-centered">
-        Sign Up Form
-    </h2>
     <form action="">
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">First Name *</label>
-            <div class="control">
+            <div class="control has-icons-left
+                      has-icons-right">
                 <input 
+                required
                 class="input" 
                 type="text"
-                placeholder="Bob" 
-                required />
+                placeholder="Bob"/>
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
             </div>
         </div>
 
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">Last Name</label>
             <div class="control has-icons-left
                       has-icons-right">
                 <input 
-                class="input is-success" 
+                class="input" 
                 type="text" 
                 placeholder="Dylan"/>
                 <span class="icon is-small is-left">
@@ -33,12 +35,12 @@
             </div>
         </div>
 
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">Email *</label>
             <div class="control has-icons-left
                       has-icons-right">
                 <input 
-                class="input is-danger" 
+                class="input" 
                 type="email" 
                 placeholder="bob.dylan@gmail.com" 
                 required/>
@@ -48,12 +50,12 @@
             </div>
         </div>
 
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">Password *</label>
             <div class="control has-icons-left
                       has-icons-right">
                 <input 
-                class="input is-danger" 
+                class="input" 
                 type="password" 
                 placeholder="(must be 8+ chars)" 
                 minlength="8"
@@ -63,12 +65,12 @@
                 </span>
             </div>
         </div>
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">Retype Password *</label>
             <div class="control has-icons-left
                       has-icons-right">
                 <input 
-                class="input is-danger" 
+                class="input" 
                 type="password" 
                 placeholder="(must be 8+ chars)" 
                 minlength="8"
@@ -78,6 +80,7 @@
                 </span>
             </div>
         </div>
+        {{!-- Future Dev: select interests --}}
         {{!-- <div class="field">
             <label class="label">
                 Current Interests
@@ -103,7 +106,7 @@
             </div>
         </div> --}}
 
-        <div class="field">
+        <div class="field custom-field">
             <label class="label">
                 Bio
             </label>
@@ -114,12 +117,12 @@
             </div>
         </div>
 
-        <div class="field is-grouped">
-            <div class="control">
-                <button class="button is-success">
-                    Sign up
+        <div class="field custom-field">
+            {{!-- <div class="control"> --}}
+                <button id="btn" class="button custom-btn">
+                    <strong>Sign Up</strong>
                 </button>
-            </div>
+            {{!-- </div> --}}
             {{!-- <div class="control">
                 <button class="button is-link is-light">
                     Cancel
@@ -127,6 +130,9 @@
             </div> --}}
         </div>
     </form>
+  </div>
+ </div>
+</div>
 </div>
 
 <script src="./public/js/signup.js"></script>

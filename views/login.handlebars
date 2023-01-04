@@ -2,8 +2,9 @@
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
-        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
-          <form action="" class="box">
+        <div class="custom-container column is-5-tablet is-4-desktop is-4-widescreen">
+        <div class="card">
+          <form action="" class="box custom-content">
             <section class="field">
               <label for="" class="label">Email</label>
               <div class="control has-icons-left">
@@ -13,7 +14,6 @@
                 class="input" 
                 required
                 />
-                {{!-- TODO: need closing /> or just > after required? --}}
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
@@ -40,11 +40,12 @@
               </label>
             </div> --}}
             <section class="field">
-              <button class="button is-success">
-                Login
+              <button class="button custom-btn">
+                <strong>Log In</strong>
               </button>
             </section>
           </form>
+        </div>
         </div>
       </div>
     </div>
