@@ -5,7 +5,7 @@ const { Post } = require('../../models');
 // CREATE new post
 router.post('/', async (req, res) => {
     try {
-      const projectData = await Post.create({
+      const postData = await Post.create({
         projectId: req.body.projectId,
         caption: req.body.caption,
         media: req.body.media,
@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
       req.session.save(() => {
         req.session.loggedIn = true;
   
-        res.status(200).json(projectData);
+        res.status(200).json(postData);
       });
     } catch (err) {
       res.status(500).json(err);
