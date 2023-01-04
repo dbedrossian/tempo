@@ -33,10 +33,13 @@
   }
 #custom-nav {
     background-color: var(--col-p-5);
+    /* border-bottom: var(--col-grey-dark);
+    border-width: 3px; */
 }
-#custom-main {
+.custom-main {
     background-color: var(--col-bg-2);
-    max-width: max-content;
+    /* border-top: var(--col-grey-dark);
+    border-width: 3px; */
 }
 #custom-container {
     display: grid;
@@ -45,18 +48,25 @@
     padding: 20px;
     border-radius: 8px;
     background-color: var(--col-grey-dark);
-    /* width: 100%; */
+}
+#icon {
+    font-size: 48px;
+    padding-left: 2px;
 }
 .card{
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
     background-color: var(--col-p-5);
+    margin-bottom: 20px;
 }
 .logo {
-    font-family: var(--ff1);
+    font-family: var(--ff3);
+    font-weight: 700;
     font-size: 60px;
     color: var(--col-bg-2);
+    text-shadow: 5px 0px 3px var(--col-p-2);
+    padding-left: 10px;
   }
 .custom-content {
     background-color: var(--col-grey);
@@ -75,6 +85,7 @@
     font-size: 50px;
     font-family: var(--ff1);
     color: var(--col-p-2);
+    text-shadow: 5px 0px 3px var(--col-p-5);
 }
 .custom-btn {
     background-color: var(--col-p-2);

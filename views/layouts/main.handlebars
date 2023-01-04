@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,300&family=Six+Caps&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/62cdfec72e.js" crossorigin="anonymous"></script>
   <title>Tempo</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       
-      <h2 class="logo">Tempo</h2>
+      <h2 class="logo">Temp<i id="icon" class="fa-solid fa-compact-disc"></i></h2>
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -25,14 +26,14 @@
     </a>
   </div>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item custom-txt-nav">
+  <div id="navbarBasicExample" class="navbar-menu level">
+    <div class="navbar-start level-left">
+      {{!-- <a class="custom-txt-nav">
         Home
-      </a>
+      </a> --}}
 
       {{#if loggedIn}}
-      <a class="navbar-item custom-txt-nav">
+      <a class="custom-txt-nav">
         Profile
       </a>
       {{/if}}
@@ -59,7 +60,7 @@
   </div>
 </nav>
 
-<main id="custom-main" class="container is-fullhd">
+<main class="custom-main container-max-width">
   {{{ body }}}
 </main>
   
