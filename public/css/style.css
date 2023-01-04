@@ -103,7 +103,6 @@
 .custom-btn-light:hover {
     border-color: var(--col-bg-2);
 }
-}
 
 .custom-txt {
     font-family: var(--ff3);
