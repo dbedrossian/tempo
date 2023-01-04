@@ -1,27 +1,26 @@
-<section>
-  <aside class="widget widget-about">
-    <h4 class="widget-title">{{user.firstName}} {{user.lastName}}</h4>
-    <img class="img-fluid" src="{{user.profilePic}}">
-    <p class="custom-txt">{{user.bio}}</p>
+<section class="columns">
+  <aside class="custom-container column is-one-quarter">
+   <div class="card">
+    <div class="custom-content custom-about">
+     <h4 class="widget-title">{{firstName}} {{lastName}}</h4>
+     <img class="img-fluid" src="{{profilePic}}https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
+     <p class="custom-txt">{{bio}}</p>
 
    {{!-- Future Dev: add links to external socials --}}
    {{!-- <ul class="social-icons mb-3">
-      
       <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
-      
       <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
-      
       <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
-      
       <li class="list-inline-item"><a href="#"><i class="ti-github"></i></a></li>
-      
       <li class="list-inline-item"><a href="#"><i class="ti-youtube"></i></a></li> --}}
-      
     {{!-- </ul> --}}
-    <a href="about-me.html" class="btn btn-primary mb-2">New Project</a>
-    <a href="about-me.html" class="btn btn-primary mb-2">New Post</a>
+    {{!-- !! are the routes linked correctly? --}}
+     <a href="/api/project-routes/" class="button custom-btn">New Project</a>
+     <a href="/api/post-routes/" class="button custom-btn">New Post</a>
+    </div>
+   </div>
   </aside>
-
+ <section class="column is-three-quarters"
   {{#if user.project}}
     <section class="intro">
       <div class="container">
@@ -43,6 +42,7 @@
         </li>
       </ul>
     </section>
+ </section>
   {{/if}}
 </section>
 
