@@ -6,7 +6,7 @@
             </button>
             
             <!-- placeholder for uploaded image -->
-            <img id="uploadedimage" src="">
+            <img id="uploadedimage" src="{{media}}">
             </img>
 
             <!-- cloudinary upload widget -->
@@ -27,8 +27,11 @@
             </div>
 
             <div class="content">
-                <p class="custom-txt">{{post.caption}}</p>
+                <p class="custom-txt">{{caption}}</p>
                 <p class="custom-txt">{{createdAt}}</p>
+                {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
+                {{!-- <a href="#">#interest1</a>
+                <a href="#">#interest2</a> --}}
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@
     <h1 class="title has-text-centered">
        New Account
     </h1>
-    <form action="">
+    <form class="signup-form">
         <div class="field custom-field">
             <label class="label">First Name *</label>
             <div class="control has-icons-left
@@ -13,6 +13,7 @@
                 <input 
                 required
                 class="input" 
+                id="firstName-signup"
                 type="text"
                 placeholder="Bob"/>
                 <span class="icon is-small is-left">
@@ -27,6 +28,7 @@
                       has-icons-right">
                 <input 
                 class="input" 
+                id="lastName-signup"
                 type="text" 
                 placeholder="Dylan"/>
                 <span class="icon is-small is-left">
@@ -41,6 +43,7 @@
                       has-icons-right">
                 <input 
                 class="input" 
+                id="email-signup"
                 type="email" 
                 placeholder="bob.dylan@gmail.com" 
                 required/>
@@ -57,6 +60,7 @@
                 <input 
                 class="input" 
                 type="password" 
+                id="password-signup"
                 placeholder="(must be 8+ chars)" 
                 minlength="8"
                 required />
@@ -72,6 +76,7 @@
                 <input 
                 class="input" 
                 type="password" 
+                id="passCheck-signup"
                 placeholder="(must be 8+ chars)" 
                 minlength="8"
                 required />
@@ -113,21 +118,17 @@
             <div class="control">
                 <textarea 
                 class="textarea" 
+                id="bio-signup"
                 placeholder="Tell us about yourself! (You can change or update this later)"></textarea>
             </div>
         </div>
 
         <div class="field custom-field">
-            {{!-- <div class="control"> --}}
+            <div class="control">
                 <button id="btn" class="button custom-btn">
                     <strong>Sign Up</strong>
                 </button>
-            {{!-- </div> --}}
-            {{!-- <div class="control">
-                <button class="button is-link is-light">
-                    Cancel
-                </button>
-            </div> --}}
+            </div>
         </div>
     </form>
   </div>
@@ -135,4 +136,4 @@
 </div>
 </div>
 
-<script src="./public/js/signup.js"></script>
+<script src="./js/signup.js"></script>
