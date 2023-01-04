@@ -22,10 +22,11 @@ router.get('/', async (req, res) => {
         const posts = postData.map((post) =>
             post.get({ plain: true })
         );
-        console.log(postData);
+        
         res.render('homepage', {
             posts,
             loggedIn: req.session.loggedIn,
+            userId: req.session.userId
         });
     } catch (err) {
         res.status(500).json(err);
@@ -77,6 +78,7 @@ router.get('/signup', async (req, res) => {
             res.redirect('/');
             return;
         }
+        
         res.render('signup');
     } catch (err) {
         res.status(500).json(err);
