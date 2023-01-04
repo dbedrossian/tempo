@@ -33,7 +33,7 @@
       </a> --}}
 
       {{#if loggedIn}}
-      <a class="custom-txt-nav">
+      <a class="custom-txt-nav" href="/profile/{{ userId }}">
         Profile
       </a>
       {{/if}}
@@ -43,7 +43,7 @@
       <div class="navbar-item">
         <div class="buttons">
           {{#if loggedIn}}
-          <a class="button is-light custom-txt-nav">
+          <a class="button is-light custom-txt-nav" id="logout">
             Log Out
           </a>
           {{else}}
@@ -63,6 +63,9 @@
 <main class="custom-main container-max-width">
   {{{ body }}}
 </main>
-  
+
+{{#if loggedIn}}
+  <script src="./js/logout.js"></script>
+{{/if}}
 </body>
 </html>

@@ -1,0 +1,32 @@
+<section>
+  <aside>
+    <article>
+      <img src="" alt="">
+      <h3></h3>
+      <p></p>
+    </article>
+  </aside>
+
+  {{#if user.project}}
+    <section class="intro">
+      <div class="container">
+        <h1>{{user.project}} &darr;</h1>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <ul>
+        {{#each user.project.posts as |post|}}
+          <li>
+            {{> post-details}}
+          </li>
+        {{/each}}
+        <li>
+          <div>
+            <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+          </div>
+        </li>
+      </ul>
+    </section>
+  {{/if}}
+</section>
