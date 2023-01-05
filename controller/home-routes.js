@@ -49,8 +49,8 @@ router.get('/profile/:id', async (req, res) => {
             },
             ],
         });
-        console.log('profileData log', profileData);
         const profile = profileData.get({ plain: true });
+
         req.session.projectId = profile.project.id;
         res.render('profile', { 
             profile, 

@@ -109,9 +109,6 @@
 .custom-main {
     background-color: var(--col-bg-2);
     padding-top: 10px
-    /* border-top: 5px var(--col-p-2); */
-    /* border-top: var(--col-grey-dark);
-    border-width: 3px; */
 }
 .custom-main-prof {
     background-color: var(--col-bg-2);
@@ -136,14 +133,18 @@
     color: var(--col-p-6);
     size: 40px;
     padding-top: 100%;
-    /* border-top: 5px var(--col-p-2); */
 }
 .custom-txt-header {
     font-size: 45px;
     font-family: var(--ff1);
     color: var(--col-p-2);
     padding-top: 8px;
-    /* text-shadow: 5px 0px 3px var(--col-p-5); */
+}
+.custom-txt-name {
+    font-family: var(--ff3);
+    font-size: 20px;
+    color: var(--col-grey-dark);
+    padding-bottom: 5px;
 }
 .custom-txt-name {
     font-family: var(--ff3);
@@ -195,11 +196,7 @@
 }
 
 body {
-  /* font: normal 16px/1.5 "Helvetica Neue", sans-serif; */
-  /* background: #456990; */
-  /* color: #fff; */
   overflow-x: hidden;
-  /* padding-bottom: 50px; */
 }
 
 
@@ -266,7 +263,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--col-p-2) transparent transparent;
+  border-color: transparent var(--col-grey) transparent transparent;
 }
 .timeline ul li:nth-child(even) div {
   left: -439px;
@@ -275,7 +272,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--col-p-2);
+  border-color: transparent transparent transparent var(--col-grey);
 }
 time {
   display: block;
@@ -331,7 +328,7 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent var(--col-grey) transparent transparent;
   }
 }
 /* EXTRA/CLIP PATH STYLES

@@ -34,7 +34,7 @@ const sess = {
 app.use(session(sess));
 
 // what goes here if we don't have helpers?
-const hbs = exphbs.create();
+const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
