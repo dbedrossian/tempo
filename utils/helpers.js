@@ -13,17 +13,5 @@ module.exports = {
       }
     
     return options.inverse(this);
-  },
-  // checkMedia: (media_type, media_url, alt_text="") => {
-  //   if(media_type === 'image') {
-  //     // let imgEl = document.createElement('img');
-  //     // imgEl.src = media_url;
-  //     // imgEl.alt = alt_text;
-  //     // return imgEl;
-  //     let imgEl = $('<img></img>')
-  //     imgEl.attr('src', media_url);
-  //     imgEl.attr('alt', alt_text);
-  //     return imgEl.html();
-  //   }
-  // }
+  }
 };
