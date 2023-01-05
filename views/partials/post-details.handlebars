@@ -5,7 +5,7 @@
             <button id="upload_widget" class="cloudinary-button">
                 Upload files
             </button>
-            
+
             <!-- placeholder for uploaded image -->
             <img id="uploadedimage" src="{{media}}">
             </img>
@@ -20,6 +20,8 @@
         </div> --}}
         <div class="card-content custom-content">
             <div class="media">
+                <img id="uploadedimage" src="{{media}}">
+                </img>
                 <div class="media-content">
                     <p class="title is-4">{{project.name}}</p>
                     <a href="/user/{{id}}" class="custom-txt-name">{{project.user.firstName}} {{project.user.lastName}}
