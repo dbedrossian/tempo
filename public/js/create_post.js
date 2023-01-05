@@ -1,5 +1,5 @@
-const cloudName = "dtgo6e01y";
-const uploadPreset = "ml_default";
+const cloudName = "dv0ocifto";
+const uploadPreset = "o1oq2ewu";
 let url;
 
 const myWidget = cloudinary.createUploadWidget(
