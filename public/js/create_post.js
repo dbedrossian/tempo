@@ -1,4 +1,4 @@
-const cloudName = "dtgo6e01y";
+const cloudName = "dmqlf6etn";
 const uploadPreset = "ml_default";
 let url;
 
