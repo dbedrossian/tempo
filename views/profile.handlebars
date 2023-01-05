@@ -1,9 +1,11 @@
 {{log profile.project.posts}}
 <section class="columns custom-main-prof">
-  <aside class="custom-container column is-one-quarter"> 
+  {{!-- about me --}}
+ <aside class="column is-one-quarter"> 
+  <div class="custom-container">
    <div class="card">
     <div class="custom-content custom-about">
-     <h4 class="widget-title">{{profile.firstName}} {{profile.lastName}}</h4>
+     <p id="custom-name">{{profile.firstName}} {{profile.lastName}}</p>
      <img class="img-fluid" src="{{profile.profilePic}}https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
      <p class="custom-txt">{{profile.bio}}</p>
      <a class="button custom-btn js-modal-trigger"
@@ -17,10 +19,11 @@
       </a>
     </div>
    </div>
-  </aside>
-
+  </div>
+ </aside>
+{{!-- project timeline --}}
  <section class="column is-three-quarters">
-   <section class="intro custom-container">
+   <section id="custom-title" class="intro custom-container">
   {{#if profile.project}}
       <div class="card">
         <div class="custom-content"
@@ -57,8 +60,8 @@
       <!-- Content ... -->
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Save changes</button>
-      <button class="button">Cancel</button>
+      <button class="button custom-btn">Save changes</button>
+      <button class="button custom-btn-light">Cancel</button>
     </footer>
   </div>
 </div>
@@ -66,16 +69,16 @@
 <div id="modal-project" class="modal">
   <div class="modal-background"></div>
   <div class="modal-card">
-    <header class="modal-card-head">
+    <header class="modal-card-head card">
       <p class="modal-card-title">New Project...</p>
       <button class="delete" aria-label="close"></button>
     </header>
-    <section class="modal-card-body">
+    <section class="modal-card-bod custom-content">
       <!-- Content ... -->
     </section>
-    <footer class="modal-card-foot">
-      <button class="button is-success">Create Project</button>
-      <button class="button">Cancel</button>
+    <footer class="modal-card-foot custom-content">
+      <button class="button custom-btn">Create Project</button>
+      <button class="button custom-btn-xlight">Cancel</button>
     </footer>
   </div>
 </div>
@@ -91,8 +94,8 @@
       <!-- Content ... -->
     </section>
     <footer class="modal-card-foot">
-      <button class="button is-success">Post</button>
-      <button class="button">Cancel</button>
+      <button class="button custom-btn">Create Post</button>
+      <button class="button custom-btn-xlight">Cancel</button>
     </footer>
   </div>
 </div>

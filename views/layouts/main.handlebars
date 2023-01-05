@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,300&family=Six+Caps&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat:wght@400;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,300&family=Six+Caps&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/62cdfec72e.js" crossorigin="anonymous"></script>
   <title>Tempo</title>
 </head>
+
 <body>
   <nav id="custom-nav" class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      
-      <h2 class="logo">Temp<i id="icon" class="fa-solid fa-compact-disc"></i></h2>
-    </a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu level">
-    <div class="navbar-start level-left">
-      {{!-- <a class="custom-txt-nav">
-        Home
-      </a> --}}
-
-      {{#if loggedIn}}
-      <a class="custom-txt-nav" href="/profile/{{ userId }}">
-        Profile
+        <h2 class="logo">Temp<i id="icon" class="fa-solid fa-compact-disc"></i></h2>
       </a>
-      {{/if}}
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          {{#if loggedIn}}
-          <a class="button is-light custom-txt-nav" id="logout">
-            Log Out
-          </a>
-          {{else}}
-          <a href="/signup" class="button custom-btn">
-            <strong>Sign Up</strong>
-          </a>
-          <a href="/login" class="button custom-btn-light">
-            Log In
-          </a>
-          {{/if}}
+    <div id="navbarBasicExample" class="navbar-menu level">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            {{#if loggedIn}}
+            <a href="/profile/{{ userId }}" class="button custom-btn">
+              <strong>Profile</strong>
+            </a>
+            <a class="button custom-btn-light" id="logout">
+              Log Out
+            </a>
+            {{else}}
+            <a href="/signup" class="button custom-btn">
+              <strong>Sign Up</strong>
+            </a>
+            <a href="/login" class="button custom-btn-light">
+              Log In
+            </a>
+            {{/if}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<main class="custom-main container-max-width">
-  {{{ body }}}
-</main>
+  <main class="custom-main container-max-width">
+    {{{ body }}}
+  </main>
 
-{{#if loggedIn}}
+  {{#if loggedIn}}
   <script src="/js/logout.js"></script>
-{{/if}}
+  {{/if}}
 </body>
+
 </html>

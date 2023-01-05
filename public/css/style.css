@@ -36,7 +36,7 @@
 #custom-nav {
     background-color: var(--col-p-5);
     border-bottom: solid var(--col-p-2);
-    border-width: 3px;/*  */
+    border-width: 3px; 
 }
 #custom-container-grid {
     display: grid;
@@ -53,19 +53,31 @@
 #btn {
     margin-bottom: 10px;
 }
+#custom-name {
+    font-family: var(--ff3);
+    font-size: 30px;
+    color: var(--col-grey-dark);
+    padding-bottom: 5px;
+}
+#custom-title {
+    font-family: var(--ff3);
+    font-size: 35px;
+    color: var(--col-grey-dark);
+    text-align: center;
+}
  /* custom classes */
-.card-grid{
+ .card {
+  height: max-content;
+  padding: 10px;
+  /* border-width: 10px; */
+  background-color: var(--col-p-5);
+}
+ .card-grid{
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
     background-color: var(--col-p-5);
     margin-bottom: 20px;
-}
-.card {
-    height: max-content;
-    padding: 10px;
-    /* border-width: 10px; */
-    background-color: var(--col-p-5);
 }
 .logo {
     font-family: var(--ff3);
@@ -112,9 +124,10 @@
     border-radius: 5px;
 }
 .custom-txt {
-    font-family: var(--ff5);
+    font-family: var(--ff3);
     color: var(--col-grey-dark);
-  }
+    padding-bottom: 5px;
+}
 .custom-txt-nav {
     font-family: var(--ff5);
     color: var(--col-p-6);
@@ -126,6 +139,18 @@
     font-family: var(--ff1);
     color: var(--col-p-2);
     padding-top: 8px;
+}
+.custom-txt-name {
+    font-family: var(--ff3);
+    font-size: 20px;
+    color: var(--col-grey-dark);
+    padding-bottom: 5px;
+}
+.custom-txt-name {
+    font-family: var(--ff3);
+    font-size: 20px;
+    color: var(--col-grey-dark);
+    padding-bottom: 5px;
 }
 .custom-form {
     padding-top: 30px;
@@ -149,9 +174,12 @@
 .custom-btn-light:hover {
     border-color: var(--col-bg-2);
 }
-.custom-txt {
-    font-family: var(--ff3);
-    color: var(--col-p-4);
+.custom-btn-xlight {
+  background-color: var(--col-p-1);
+  border-color: var(--col-p-1);
+}
+.custom-btn-xlight:hover {
+  border-color: var(--col-bg-2);
 }
 
 
@@ -188,7 +216,7 @@ INTRO SECTION
 h1 {
   font-size: 2.5rem;
 }
-/* TIMELINE
+/* TIMELINE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul {
   /* background: var(--col-grey-dark); */
@@ -252,15 +280,13 @@ time {
   font-weight: bold;
   margin-bottom: 8px;
 }
-
-
-/* EFFECTS
+/* TIMELINE EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
 .timeline ul li.in-view::after {
-  background: var(--col-grey);
+  background: var(--col-p-5);
 }
 .timeline ul li div {
   visibility: hidden;
