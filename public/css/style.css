@@ -66,18 +66,18 @@
     text-align: center;
 }
  /* custom classes */
-.card-grid{
+ .card {
+  height: max-content;
+  padding: 10px;
+  /* border-width: 10px; */
+  background-color: var(--col-p-5);
+}
+ .card-grid{
 	height: max-content;
     padding: 10px;
     /* border-width: 10px; */
     background-color: var(--col-p-5);
     margin-bottom: 20px;
-}
-.card {
-    height: max-content;
-    padding: 10px;
-    /* border-width: 10px; */
-    background-color: var(--col-p-5);
 }
 .logo {
     font-family: var(--ff3);
@@ -126,10 +126,11 @@
     background-color: var(--col-grey);
     border-radius: 5px;
 }
-/* .custom-txt {
-    font-family: var(--ff5);
+.custom-txt {
+    font-family: var(--ff3);
     color: var(--col-grey-dark);
-  } */
+    padding-bottom: 5px;
+}
 .custom-txt-nav {
     font-family: var(--ff5);
     color: var(--col-p-6);
@@ -147,11 +148,6 @@
 .custom-txt-name {
     font-family: var(--ff3);
     font-size: 20px;
-    color: var(--col-grey-dark);
-    padding-bottom: 5px;
-}
-.custom-txt {
-    font-family: var(--ff3);
     color: var(--col-grey-dark);
     padding-bottom: 5px;
 }
@@ -176,6 +172,13 @@
 }
 .custom-btn-light:hover {
     border-color: var(--col-bg-2);
+}
+.custom-btn-xlight {
+  background-color: var(--col-p-1);
+  border-color: var(--col-p-1);
+}
+.custom-btn-xlight:hover {
+  border-color: var(--col-bg-2);
 }
 
 
@@ -216,7 +219,7 @@ INTRO SECTION
 h1 {
   font-size: 2.5rem;
 }
-/* TIMELINE
+/* TIMELINE STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul {
   /* background: var(--col-grey-dark); */
@@ -263,7 +266,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #f45b69 transparent transparent;
+  border-color: transparent var(--col-p-2) transparent transparent;
 }
 .timeline ul li:nth-child(even) div {
   left: -439px;
@@ -272,7 +275,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #f45b69;
+  border-color: transparent transparent transparent var(--col-p-2);
 }
 time {
   display: block;
@@ -280,15 +283,13 @@ time {
   font-weight: bold;
   margin-bottom: 8px;
 }
-
-
-/* EFFECTS
+/* TIMELINE EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
 .timeline ul li.in-view::after {
-  background: var(--col-grey);
+  background: var(--col-p-5);
 }
 .timeline ul li div {
   visibility: hidden;
