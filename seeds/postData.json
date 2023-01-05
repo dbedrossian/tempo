@@ -1,67 +1,93 @@
 [
-  {
-     "caption":"Performing 'Wildflowers' at the coffeehouse",
-     "media":"video",
-     "projectId":1
-  },
-  {
-     "caption":"Live performance of 'Midnight Sun' at the coffeehouse",
-     "media":"audio",
-     "projectId":1
-  },
-  {
-     "caption":"Rehearsing for my album release show",
-     "media":"picture",
-     "projectId":2
-  },
-  {
-     "caption":"Recording vocals for my debut album",
-     "media":"picture",
-     "projectId":2
-  },
-  {
-     "caption":"Premiering my new single 'Something to Believe In' at the open mic night",
-     "media":"video",
-     "projectId":2
-  },
-  {
-     "caption":"Rockin' out at the rock club",
-     "media":"video",
-     "projectId":3
-  },
-  {
-     "caption":"Performing an original song at the rock club",
-     "media":"audio",
-     "projectId":3
-  },
-  {
-     "caption":"Sound check at the rock club",
-     "media":"picture",
-     "projectId":3
-  },
-  {
-     "caption":"Scoring session for 'Galactic Adventures'",
-     "media":"picture",
-     "projectId":4
-  },
-  {
-     "caption":"Listen to a preview of the 'Galactic Adventures' soundtrack",
-     "media":"audio",
-     "projectId":4
-  },
-  {
-     "caption":"Orchestra recording session for 'The Great Heist' score",
-     "media":"video",
-     "projectId":5
-  },
-  {
-     "caption":"Composing the main theme for 'The Great Heist'",
-     "media":"audio",
-     "projectId":5
-  },
-  {
-     "caption":"Behind the scenes of the 'The Great Heist' score recording sessions",
-     "media":"picture",
-     "projectId":5
-  }
+   {
+      "caption":"Performing 'Wildflowers' at the coffeehouse",
+      "alt_text":"",
+      "media_type":"audio",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/video/upload/v1672945723/tempo-media-files/thinking-of-home-acoustic-guitar-piece-11885_fc47ey.mp3",
+      "project_id":1
+   },
+   {
+      "caption":"Live performance of 'Midnight Sun' at the coffeehouse",
+      "alt_text":"",
+      "media_type":"audio",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/video/upload/v1672945723/tempo-media-files/sad-happy-guitar-acoustic-guitar-instrumental-background-guitar-127924_wdlj5a.mp3",
+      "project_id":1
+   },
+   {
+      "caption":"Rehearsing for my album release show",
+      "alt_text":"Jane Doe rehearsing on stage",
+      "media_type":"image",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/image/upload/v1672945684/tempo-media-files/shutterstock_740699524-620x420_digsqv.jpg",
+      "project_id":2
+   },
+   {
+      "caption":"Recording vocals for my debut album",
+      "alt_text":"Jane Doe recording vocals in a studio",
+      "media_type":"image",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/image/upload/v1672945684/tempo-media-files/female-singer-in-recording-studio-recording-a-vocal-take_ibxu4p.jpg",
+      "project_id":2
+   },
+   {
+      "caption":"Premiering my new single 'Something to Believe In' at the open mic night",
+      "alt_text":"",
+      "media_type":"",
+      "media_url":"",
+      "project_id":2
+   },
+   {
+      "caption":"Rockin' out at the rock club",
+      "alt_text":"",
+      "media_type":"",
+      "media_url":"",
+      "project_id":3
+   },
+   {
+      "caption":"Performing an original song at the rock club",
+      "alt_text":"",
+      "media_type":"audio",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/video/upload/v1672945359/tempo-media-files/energetic-funk-rock-131819_qqmnsd.mp3",
+      "project_id":3
+   },
+   {
+      "caption":"Sound check at the rock club",
+      "alt_text":"Bob Johnson and his band setting up on stage at a rock club",
+      "media_type":"image",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/image/upload/v1672945359/tempo-media-files/15-Tips-for-a-Smoother-Soundcheck-from-the-Pros_pf2cyh.jpg",
+      "project_id":3
+   },
+   {
+      "caption":"Scoring session for 'Galactic Adventures'",
+      "alt_text":"Alice Williams working on a computer in a studio",
+      "media_type":"image",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/image/upload/v1672945310/tempo-media-files/shutterstock_2012041877-scaled_rfrwne.jpg",
+      "project_id":4
+   },
+   {
+      "caption":"Listen to a preview of the 'Galactic Adventures' soundtrack",
+      "alt_text":"",
+      "media_type":"audio",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/video/upload/v1672945310/tempo-media-files/drone-9708_u80l68.mp3",
+      "project_id":4
+   },
+   {
+      "caption":"Orchestra recording session for 'The Great Heist' score",
+      "alt_text":"",
+      "media_type":"",
+      "media_url":"",
+      "project_id":5
+   },
+   {
+      "caption":"Composing the main theme for 'The Great Heist'",
+      "alt_text":"",
+      "media_type":"audio",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/video/upload/v1672945270/tempo-media-files/catch-it-117676_n6eqsc.mp3",
+      "project_id":5
+   },
+   {
+      "caption":"Behind the scenes of the 'The Great Heist'",
+      "alt_text":"Behind the scenes with the lead actor, Chase Alodem, for 'The Great Heist' score",
+      "media_type":"image",
+      "media_url":"https://res.cloudinary.com/dv0ocifto/image/upload/v1672945270/tempo-media-files/pexels-cottonbro-studio-3206120_bij4k8.jpg",
+      "project_id":5
+   }
 ]
