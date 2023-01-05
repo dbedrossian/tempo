@@ -35,8 +35,8 @@
 /* custom ids */
 #custom-nav {
     background-color: var(--col-p-5);
-    /* border-bottom: var(--col-grey-dark);
-    border-width: 3px; */
+    border-bottom: solid var(--col-p-2);
+    border-width: 3px; 
 }
 #custom-container-grid {
     display: grid;
