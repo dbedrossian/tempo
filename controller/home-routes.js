@@ -51,11 +51,12 @@ router.get('/profile/:id', async (req, res) => {
         });
         console.log('profileData log', profileData);
         const profile = profileData.get({ plain: true });
-        console.log('profile log', profile);
+        req.session.projectId = profile.project.id;
         res.render('profile', { 
             profile, 
             loggedIn: req.session.loggedIn,
-            userId: req.session.userId 
+            userId: req.session.userId,
+            projectId: req.session.projectId 
         })
     } catch (err) {
         res.status(500).json(err);
