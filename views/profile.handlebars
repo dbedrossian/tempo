@@ -6,15 +6,18 @@
    <div class="card">
     <div class="custom-content custom-about">
      <p id="custom-name">{{profile.firstName}} {{profile.lastName}}</p>
-     <img class="img-fluid" src="{{profile.profilePic}}https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
+     {{#if profile.profilePic}}
+      <img class="img-fluid" src="{{profile.profilePic}}">
+      {{else}}
+      <img class="img-fluid" src="https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
+     {{/if}}
      <p class="custom-txt">{{profile.bio}}</p>
-     {{!-- {{#unless profile.project}} --}}
+     {{#unless profile.project}}
      <a class="button custom-btn js-modal-trigger"
         data-target="modal-project">
         New Project
       </a>
-      {{!-- {{/unless}} --}}
-     {{!-- <button id="upload_widget" class="cloudinary-button">Upload files</button> --}}
+      {{/unless}}
      {{#if profile.project}}
      <a class="button custom-btn js-modal-trigger"
         data-target="modal-post">
@@ -42,33 +45,11 @@
             {{> timeline-post}}
           </li>
         {{/each}}
-        <li>
-          <div>
-            <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-          </div>
-        </li>
       </ul>
     </section>
  </section>
   {{/if}}
 </section>
-
-<div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Modal title</p>
-      <button class="delete" aria-label="close"></button>
-    </header>
-    <section class="modal-card-body">
-      <!-- Content ... -->
-    </section>
-    <footer class="modal-card-foot">
-      <button class="button custom-btn">Save changes</button>
-      <button class="button custom-btn-light">Cancel</button>
-    </footer>
-  </div>
-</div>
 
 {{!-- New project modal, triggered on btn click --}}
 <div id="modal-project" class="modal">

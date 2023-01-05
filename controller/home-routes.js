@@ -51,7 +51,10 @@ router.get('/profile/:id', async (req, res) => {
         });
         const profile = profileData.get({ plain: true });
 
-        req.session.projectId = profile.project.id;
+        if (profile.project) {
+            req.session.projectId = profile.project.id;
+        }
+        
         res.render('profile', { 
             profile, 
             loggedIn: req.session.loggedIn,
@@ -59,6 +62,7 @@ router.get('/profile/:id', async (req, res) => {
             projectId: req.session.projectId 
         })
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 });

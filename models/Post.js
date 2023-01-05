@@ -15,8 +15,16 @@ Post.init(
       type: DataTypes.TEXT,
       allowNull: true
     },
-    media: {
+    media_type: {
       type: DataTypes.STRING,
+      allowNull: true
+    },
+    alt_text: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    media_url: {
+      type: DataTypes.TEXT,
       allowNull: true
     },
     projectId: {

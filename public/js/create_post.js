@@ -1,5 +1,5 @@
-const cloudName = "dmqlf6etn";
-const uploadPreset = "ml_default";
+const cloudName = "dv0ocifto";
+const uploadPreset = "o1oq2ewu";
 let url;
 
 const myWidget = cloudinary.createUploadWidget(
@@ -12,9 +12,6 @@ const myWidget = cloudinary.createUploadWidget(
     if (!error && result && result.event === "success") {
       console.log("Done! Here is the info: ", result.info);
       url = result.info.secure_url;
-      document
-        .getElementById("uploadedimage")
-        .setAttribute("src", result.info.secure_url);
     }
   }
 );
@@ -33,9 +30,11 @@ const postFormHandler = async (event) => {
   event.preventDefault();
 
   const captionEl = document.querySelector('#post-caption');
+  const mediaTypeEl = document.querySelector('#')
   // const urlEl = document.querySelector('#post-media-url');
 
   const caption = captionEl ? captionEl.value.trim() : null;
+  const media_type = mediaTypeEl ? mediaTypeEl.value : null;
   const media_url = url ? url : null;
 
   console.log(caption);
@@ -44,7 +43,7 @@ const postFormHandler = async (event) => {
   if (caption || media_url) {
     const response = await fetch('/api/posts', {
       method: 'POST',
-      body: JSON.stringify({ caption, media_url }),
+      body: JSON.stringify({ caption, media_type, media_url }),
       headers: { 'Content-Type': 'application/json' }
     });
 

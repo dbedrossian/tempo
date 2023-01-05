@@ -181,6 +181,11 @@
 .custom-btn-xlight:hover {
   border-color: var(--col-bg-2);
 }
+.custom-camo{
+  color: var(--col-grey);
+  font-size: 0px;
+  margin-bottom: 10px;
+}
 
 
 

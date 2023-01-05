@@ -1,9 +1,22 @@
+{{log media_type}}
+{{log media_url}}
 <div class="card-content custom-content">
     <section class="media">
-        <section class="media-content">
-            <p class="title is-4 custom-txt">{{project.name}}</p>
-            <a href="/user/{{id}}" class="subtitle is-6">{{project.user.firstName}} {{project.user.lastName}}
-            </a>
+        <section class="media-content custom-camo">
+                {{#ifEquals media_type "image"}}
+                    <img src="
+                {{/ifEquals}}
+                    {{ media_url }}
+                {{#if media_type}}
+                     ">
+                {{/if}}
+                {{#ifEquals media_type "audio"}}
+                    <audio controls> <source src="
+                {{/ifEquals}}
+                    {{ media_url }}
+                {{#if media_type}}
+                     " type="audio/mp3"></audio>
+                {{/if}}
         </section>
     </section>
 

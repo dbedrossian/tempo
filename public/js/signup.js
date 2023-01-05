@@ -7,12 +7,16 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector('#password-signup').value.trim();
   const passCheck = document.querySelector('#passCheck-signup').value.trim();
   const bio = document.querySelector('#bio-signup').value.trim();
-  const profilePic = result.secure_url;
+
+  if (password !== passCheck) {
+    alert('Passwords must match!');
+    return;
+  }
 
   if (firstName && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, password,  }),
+      body: JSON.stringify({ firstName, lastName, email, password, bio }),
       headers: { 'Content-Type': 'application/json' }
     });
 

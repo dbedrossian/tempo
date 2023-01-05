@@ -19,19 +19,30 @@
             </script>
         </div> --}}
         <div class="card-content custom-content">
-            <div class="media">
-                <img id="uploadedimage" src="{{media}}">
-                </img>
-                <div class="media-content">
-                    <p class="title is-4">{{project.name}}</p>
-                    <a href="/user/{{id}}" class="custom-txt-name">{{project.user.firstName}} {{project.user.lastName}}
-                    </a>
-                </div>
-            </div>
+            <section class="media">
+                <section class="media-content custom-camo">
+                    {{#ifEquals media_type "image"}}
+                        <img src="
+                    {{/ifEquals}}
+                        {{ media_url }}
+                    {{#if media_type}}
+                        ">
+                    {{/if}}
+                    {{#ifEquals media_type "audio"}}
+                        <audio controls> <source src="
+                    {{/ifEquals}}
+                        {{ alt_text }}
+                    {{#if media_type}}
+                        " type="audio/mp3"></audio>
+                    {{/if}}
+                </section>
+            </section>
 
             <div class="content">
+                <p class="title is-4">{{project.name}}</p>
+                <a href="/profile/{{project.user.id}}" class="custom-txt-name">{{project.user.firstName}} {{project.user.lastName}}</a>
                 <p class="custom-txt">{{caption}}</p>
-                <p class="custom-txt">{{createdAt}}</p>
+                <p class="custom-txt">{{format_date createdAt}} {{format_time createdAt}}</p>
                 {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
                 {{!-- <a href="#">#interest1</a>
                 <a href="#">#interest2</a> --}}
