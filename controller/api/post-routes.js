@@ -9,8 +9,8 @@ router.post('/', async (req, res) => {
       const postData = await Post.create({
         projectId: req.session.projectId,
         caption: req.body.caption,
-        media: req.body.media,
-        
+        media_type: req.body.media_type,
+        media_url: req.body.media_url
       });
   
       req.session.save(() => {
