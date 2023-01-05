@@ -8,15 +8,19 @@
      <p id="custom-name">{{profile.firstName}} {{profile.lastName}}</p>
      <img class="img-fluid" src="{{profile.profilePic}}https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
      <p class="custom-txt">{{profile.bio}}</p>
+     {{#unless profile.project}}
      <a class="button custom-btn js-modal-trigger"
         data-target="modal-project">
         New Project
       </a>
+      {{/unless}}
      {{!-- <button id="upload_widget" class="cloudinary-button">Upload files</button> --}}
+     {{#if profile.project}}
      <a class="button custom-btn js-modal-trigger"
         data-target="modal-post">
         New Post
       </a>
+     {{/if}}
     </div>
    </div>
   </div>
@@ -66,20 +70,22 @@
   </div>
 </div>
 
+{{!-- New project modal, triggered on btn click --}}
 <div id="modal-project" class="modal">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head card">
-      <p class="modal-card-title">New Project...</p>
+      <p class="modal-card-title custom-txt-name">New Project...</p>
       <button class="delete" aria-label="close"></button>
     </header>
-    <section class="modal-card-bod custom-content">
-      <!-- Content ... -->
+    <section class="card">
+      {{!-- pulls form partial for new project submission --}}
+      {{> project-form }}
     </section>
-    <footer class="modal-card-foot custom-content">
+    {{!-- <footer class="modal-card-foot">
       <button class="button custom-btn">Create Project</button>
       <button class="button custom-btn-xlight">Cancel</button>
-    </footer>
+    </footer> --}}
   </div>
 </div>
 
