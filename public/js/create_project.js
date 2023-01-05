@@ -4,17 +4,17 @@ const projectFormHandler = async (event) => {
   const name = document.querySelector('#project-name').value.trim();
   const description = document.querySelector('#project-description').value.trim();
 
-  if (firstName && email && password) {
+  if (name && description) {
     const response = await fetch('/api/projects/', {
       method: 'POST',
-      body: JSON.stringify({ firstName, lastName, email, password,  }),
+      body: JSON.stringify({ name, description  }),
       headers: { 'Content-Type': 'application/json' }
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace(window.location.href);
     } else {
-      alert('Failed to sign up.');
+      alert('Failed to create project');
     }
   }
 };
