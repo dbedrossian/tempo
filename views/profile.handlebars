@@ -8,7 +8,7 @@
      <p id="custom-name">{{profile.firstName}} {{profile.lastName}}</p>
      <img class="img-fluid" src="{{profile.profilePic}}https://media.istockphoto.com/id/1353524601/vector/metronome-icon-design-template-vector-isolated-illustration.jpg?s=612x612&w=0&k=20&c=_CnfjE0Z5Ke2RrvALs9Tbg76RWH9vuklsCDQ0EEQD4A=">
      <p class="custom-txt">{{profile.bio}}</p>
-     {{#unless profile.project}}
+     {{!-- {{#unless profile.project}} --}}
      <a class="button custom-btn js-modal-trigger"
         data-target="modal-project">
         New Project
@@ -69,22 +69,30 @@
 <div id="modal-post" class="modal">
   <div class="modal-background"></div>
   <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">New Post...</p>
+    <header class="modal-card-head card">
+      <p class="modal-card-title custom-txt-name">New Post...</p>
       <button class="delete" aria-label="close"></button>
     </header>
-    <form class="post-form">
-    <section class="modal-card-body">
-      <!-- Content ... -->
-      <label for="post-caption">Caption:</label>
-      <input id="post-caption" type="text">
+    <form class="post-form card">
+    <section class="modal-card-body custom-content">
+      <label for="post-caption" class="label">Caption:</label>
+       <input id="post-caption" type="text">
+       <br>
+       <br>
+      <label class="label">Select Media Type:</label>
+       <select id="post-type" type="text">
+        <option value="Video">  </option>
+        <option value="Video">Video</option>
+        <option value="Audio">Audio clip</option>
+        <option value="Picture">Picture</option>
+       </select>
       <br>
       <br>
-     <button id="upload_widget" class="cloudinary-button">Upload files</button>
+     <button id="upload_widget" class="button custom-btn-xlight">Upload files</button>
     </section>
-    <footer class="modal-card-foot">
-      <button class="button custom-btn">Create Post</button>
-      <button class="button custom-btn-xlight">Cancel</button>
+    <footer class="modal-card-foot custom-content">
+      <button class="button custom-btn"><strong>Create Post</strong></button>
+      {{!-- <button class="button custom-btn-xlight">Cancel</button> --}}
     </footer>
     </form>
   </div>
