@@ -13,6 +13,7 @@
  - [Creators](#creators)
  - [Contributors](#contributors)
  - [License](#license)
+ - [Credits](#credits)
  - [Questions](#questions)
 
  ## Background
@@ -32,7 +33,7 @@
 
  ## Screenshot
 
- ![screenshot](./public/img/gradientcurve1.png)
+ ![screenshot](./public/img/screenshot.png)
 
  ## Technologies
 
@@ -57,6 +58,12 @@
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Credits
+
+- *Music from:* Pixabay by Daddy's Music, Coma Media, OYStudio, noisysymphony, artist 22941069
+
+- *Photo by:* cottonbro studio
+ 
  ## Questions
 
  For questions, contact us on [@Github](https://github.com/KingdomSeeker328).
