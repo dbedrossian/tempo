@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-    secret: process.env.SESSION,
+    secret: "super secret secret",
     cookie: {
 //    cookie (and session) will expire after one hour
       maxAge: 60 * 60 * 1000,
