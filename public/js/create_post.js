@@ -30,7 +30,7 @@ const postFormHandler = async (event) => {
   event.preventDefault();
 
   const captionEl = document.querySelector('#post-caption');
-  const mediaTypeEl = document.querySelector('#')
+  const mediaTypeEl = document.querySelector('#post-type');
   // const urlEl = document.querySelector('#post-media-url');
 
   const caption = captionEl ? captionEl.value.trim() : null;
