@@ -1,51 +1,33 @@
-{{!-- <div class="column is-one-third"> --}}
-    {{log media}}
-    <div class="card-grid">
-        {{!-- <div class="card-image">
-            <button id="upload_widget" class="cloudinary-button">
-                Upload files
-            </button>
-
-            <!-- placeholder for uploaded image -->
-            <img id="uploadedimage" src="{{media}}">
-            </img>
-
-            <!-- cloudinary upload widget -->
-            <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript">
-            </script>
-
-            <!-- local upload instantiation -->
-            <script src="/public/js/upload_widget.js" type="text/javascript">
-            </script>
-        </div> --}}
-        <div class="card-content custom-content">
-            <section class="media">
-                <section class="media-content custom-camo">
-                    {{#ifEquals media_type "image"}}
-                        <img src="
-                    {{/ifEquals}}
-                        {{ media_url }}
-                    {{#if media_type}}
-                        ">
-                    {{/if}}
-                    {{#ifEquals media_type "audio"}}
-                        <audio controls> <source src="
-                    {{/ifEquals}}
-                        {{ media_url }}
-                    {{#if media_type}}
-                        " type="audio/mp3"></audio>
-                    {{/if}}
-                </section>
+<div class="card-grid">
+    <div class="card-content custom-content">
+        {{!-- Media Content --}}
+        <section class="media">
+            <section class="media-content custom-camo">
+                {{!-- Displays the Image --}}
+                {{#ifEquals media_type "image"}}
+                    <img src="
+                {{/ifEquals}}
+                    {{ media_url }}
+                {{#if media_type}}
+                    ">
+                {{/if}}
+                {{!-- Displays the Audio --}}
+                {{#ifEquals media_type "audio"}}
+                    <audio controls> <source src="
+                {{/ifEquals}}
+                    {{ media_url }}
+                {{#if media_type}}
+                    " type="audio/mp3"></audio>
+                {{/if}}
             </section>
+        </section>
 
-            <div class="content">
-                <p class="title is-4">{{project.name}}</p>
-                <a href="/profile/{{project.user.id}}" class="custom-txt-name">{{project.user.firstName}} {{project.user.lastName}}</a>
-                <p class="custom-txt">{{caption}}</p>
-                <p class="custom-txt">{{format_date createdAt}} {{format_time createdAt}}</p>
-                {{!-- <a>{{User.firstName}}, {{User.lastName}}</a>. --}}
-                {{!-- <a href="#">#interest1</a>
-                <a href="#">#interest2</a> --}}
-            </div>
+        {{!-- Text Content --}}
+        <div class="content">
+            <p class="title is-4">{{project.name}}</p>
+            <a href="/profile/{{project.user.id}}" class="custom-txt-name">{{project.user.firstName}} {{project.user.lastName}}</a>
+            <p class="custom-txt">{{caption}}</p>
+            <p class="custom-txt">{{format_date createdAt}} {{format_time createdAt}}</p>
         </div>
     </div>
+</div>
